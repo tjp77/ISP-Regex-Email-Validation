@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan = "en">
+
+	<head>
+		<title>ISP Project 2</title>
+		<meta charset = "utf-8"/>
+		<link rel = "stylesheet" href = "ISP.P2.Style.css"/>
+	</head>
+
+	<body onclick = "alertTheBox(event)">
+		
+		<div>	
+			<div id = "Box's home"><br/></div>
+
+			<img id = "box" src = "https://i.imgur.com/WgQ8lDb.png" style = "z-index: -1;" alt = "A pretty little box that will come to you."/>
+	
+			<h2 class = "pgTitle" style = "margin-top: 70px;">Internet Systems Programming Project 2</h2>
+			<h4>Tiffany Pankuch<br/>
+			    Finished on: 9-10-18<br>
+			    <span id = "curTime"></span>
+			</h4>
+
+			<hr/><br/><br/>
+
+
+			<a href = "ISP.P2.Factorial.html">Calculate a factorial here!</a>
+
+			
+			<br/><br/><br/>
+
+			<h3 style = "text-decoration: underline;">Email Validators:</h3>
+			
+			<br/><br/>
+
+			<lable>
+				Validate on request: 
+ 
+				<input type = "text" id = "email1" size = "25" onclick = 'this.style.color = "black";'/>
+				<input type = "button" id = "validateEmail" value = "Validate my email" onclick = "ValidateEmail()"/>
+				
+			</lable>
+
+
+			<br/><br/><br/><br/>
+
+
+			<lable>
+				Real Time Validation:
+				<input type = "text" id ="email2" size = "25" onkeyup = "RTValidation()"/>
+			</lable>	
+
+			<br/><br/><br/><br/>
+
+			<div style = "border: 1px solid gray; padding: 20px; font-size: 17px; background: rgba(255, 255, 255, 0.6);">
+				<span id = "tipBox">Enter an email to be validated!</span> 
+				<br/><span id = "tbFeedBack"></span>		
+			</div>
+		
+		</div>
+
+		<div id = "validateEmail">
+
+		</div>
+
+		<br/>		
+
+		<script type = "text/javascript" src = "ISP.P2.MainScript.js"></script>
+
+	</body>
+	
+</html>
